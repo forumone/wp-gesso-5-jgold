@@ -1,0 +1,67 @@
+cptui_post_types:
+    film:
+        name: film
+        label: Films
+        singular_label: Film
+        description: ''
+        public: 'true'
+        publicly_queryable: 'true'
+        show_ui: 'true'
+        show_in_nav_menus: 'true'
+        delete_with_user: 'false'
+        show_in_rest: 'true'
+        rest_base: ''
+        rest_controller_class: ''
+        has_archive: 'false'
+        has_archive_string: ''
+        exclude_from_search: 'false'
+        capability_type: post
+        hierarchical: 'false'
+        rewrite: 'true'
+        rewrite_slug: ''
+        rewrite_withfront: 'true'
+        query_var: 'true'
+        query_var_slug: ''
+        menu_position: ''
+        show_in_menu: 'true'
+        show_in_menu_string: ''
+        menu_icon: ''
+        supports:
+            - title
+            - editor
+            - thumbnail
+        taxonomies: {  }
+        labels:
+            menu_name: 'My Films'
+            all_items: 'All Films'
+            add_new: 'Add new'
+            add_new_item: 'Add new Film'
+            edit_item: 'Edit Film'
+            new_item: 'New Film'
+            view_item: 'View Film'
+            view_items: 'View Films'
+            search_items: 'Search Films'
+            not_found: 'No Films found'
+            not_found_in_trash: 'No Films found in trash'
+            parent: 'Parent Film:'
+            featured_image: 'Featured image for this Film'
+            set_featured_image: 'Set featured image for this Film'
+            remove_featured_image: 'Remove featured image for this Film'
+            use_featured_image: 'Use as featured image for this Film'
+            archives: 'Film archives'
+            insert_into_item: 'Insert into Film'
+            uploaded_to_this_item: 'Upload to this Film'
+            filter_items_list: 'Filter Films list'
+            items_list_navigation: 'Films list navigation'
+            items_list: 'Films list'
+            attributes: 'Films attributes'
+            name_admin_bar: Film
+            item_published: 'Film published'
+            item_published_privately: 'Film published privately.'
+            item_reverted_to_draft: 'Film reverted to draft.'
+            item_scheduled: 'Film scheduled'
+            item_updated: 'Film updated.'
+            parent_item_colon: 'Parent Film:'
+        custom_supports: ''
+.label: 'Custom Post Types'
+.cptui_post_types_format: serialized
