@@ -29,7 +29,7 @@ function gesso_theme_scripts() {
 	 */
 	wp_enqueue_style( 'google-fonts-preconnect-api', 'https://fonts.googleapis.com', array(), null );
 	wp_enqueue_style( 'google-fonts-preconnect', 'https://fonts.gstatic.com', array( 'google-fonts-preconnect-api' ), null );
-	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap', array( 'google-fonts-preconnect' ), null );
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Creepster&family=Lora:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;700&display=swap', array( 'google-fonts-preconnect' ), null );
 	// phpcs:enable
 	$style_asset_file = include 'build/css/styles.asset.php';
 	wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/build/css/styles.css', $style_asset_file['dependencies'], $style_asset_file['version'], 'all' );
@@ -123,7 +123,7 @@ function gesso_editor_scripts() {
 add_action( 'enqueue_block_editor_assets', 'gesso_editor_scripts' );
 
 function gesso_editor_styles() {
-  add_editor_style( 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap' );
+  add_editor_style( 'https://fonts.googleapis.com/css2?family=Creepster&family=Lora:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;700&display=swap' );
   add_editor_style( get_stylesheet_directory_uri() . '/build/css/editor-styles.css' );
 }
 add_action( 'admin_init', 'gesso_editor_styles' );
