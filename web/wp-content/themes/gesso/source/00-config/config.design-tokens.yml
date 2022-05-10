@@ -3,19 +3,12 @@
 gesso:
   palette:
     brand:
-      blue:
-        base: '#0071BC'
-        light: '#4773aa'
-        light-1: '#8ba6ca'
-        light-2: '#dce4ef'
-        dark: '#205493'
-        dark-1: '#112E51'
-      ocean-blue:
-        base: '#1dc2ae'
-        light: '#29e1cb'
-        light-1: '#7efbe1'
-        dark: '#008480'
-        dark-1: '#0b4b3f'
+      green:
+        base: '#007619'
+        dark: '#00430e'
+        darkest: '#011d07'
+        light: '#04a751'
+        lightest: '#a1c3b1'
     grayscale:
       white: '#ffffff'
       gray-1: '#f1f1f1'
@@ -58,30 +51,30 @@ gesso:
       secondary: grayscale.gray-5
       on-light: grayscale.gray-7
       on-dark: grayscale.white
-      link: brand.blue.base
-      link-hover: brand.blue.dark
-      link-active: brand.blue.dark
-      link-visited: brand.blue.dark
+      link: brand.green.base
+      link-hover: brand.green.dark
+      link-active: brand.green.dark
+      link-visited: brand.green.dark
     background:
       site: grayscale.white
     button:
       primary:
-        background: brand.blue.base
-        background-hover: brand.blue.dark
-        background-active: brand.blue.dark-1
-        border: brand.blue.base
-        border-hover: brand.blue.dark
+        background: brand.green.base
+        background-hover: brand.green.dark
+        background-active: brand.green.darkest
+        border: brand.green.base
+        border-hover: brand.green.dark
         text: grayscale.white
         text-hover: grayscale.white
         text-active: grayscale.white
       secondary:
-        background: brand.ocean-blue.light-1
-        background-hover: brand.ocean-blue.light
-        background-active: brand.ocean-blue.base
-        border: brand.ocean-blue.light-1
-        border-hover: brand.ocean-blue.light
-        text: brand.ocean-blue.dark-1
-        text-hover: brand.ocean-blue.dark-1
+        background: brand.green.lightest
+        background-hover: brand.green.light
+        background-active: brand.green.base
+        border: brand.green.lightest
+        border-hover: brand.green.light
+        text: brand.green.darkest
+        text-hover: brand.green.darkest
         text-active: grayscale.gray-7
       base:
         background: grayscale.gray-4
@@ -113,7 +106,7 @@ gesso:
     form:
       background: grayscale.gray-1
       background-active: grayscale.white
-      background-checked: brand.blue.base
+      background-checked: brand.green.base
       background-unchecked: grayscale.white
       border: grayscale.gray-2
       border-dark: grayscale.gray-5
@@ -124,7 +117,7 @@ gesso:
       background: other.yellow-neon.base
       text: grayscale.gray-7
     selection:
-      background: brand.blue.base
+      background: brand.green.base
       text: grayscale.white
     table:
       border: grayscale.gray-5
@@ -145,10 +138,10 @@ gesso:
         text-light: grayscale.gray-3
         text-dark: grayscale.gray-5
         text-darker: grayscale.gray-7
-        accent: brand.blue.base
-        accent-dark: brand.blue.dark-1
-        accent-light: brand.blue.light
-        focus: brand.blue.light
+        accent: brand.green.base
+        accent-dark: brand.green.darkest
+        accent-light: brand.green.light
+        focus: brand.green.light
       error:
         background: other.red.light-1
         border: other.red.light
@@ -162,7 +155,13 @@ gesso:
     font-family:
       primary:
         name: Primary
-        stack: '"Source Sans Pro", Arial, sans-serif'
+        stack: 'Lato, Georgia, serif'
+      header:
+        name: Header
+        stack: 'Raleway, Tahoma, sans-serif'
+      title:
+        name: Title
+        stack: 'Creepster, Chiller, Impact, sans-serif'
       system:
         name: System
         stack: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Oxygen-Sans", Ubuntu, Cantarell, "Fira Sans", Droid Sans, sans-serif'
@@ -235,43 +234,20 @@ gesso:
       loose: 1.7
     display:
       display:
-        color: text.primary
-        font-family: primary.stack
-        font-weight: bold
-        line-height: tight
+        font-family: title.stack
         responsive-font-size: 10
       h1:
-        color: text.primary
-        font-family: primary.stack
-        font-weight: bold
-        line-height: tight
         responsive-font-size: 8
+        font-family: title.stack
       h2:
-        color: text.primary
-        font-family: primary.stack
-        font-weight: bold
-        line-height: tight
         responsive-font-size: 7
       h3:
-        color: text.primary
-        font-family: primary.stack
-        font-weight: bold
-        line-height: tight
         responsive-font-size: 6
       h4:
-        color: text.primary
-        font-family: primary.stack
-        font-weight: bold
-        line-height: base
         responsive-font-size: 5
       h5:
-        color: text.primary
-        font-family: primary.stack
-        font-weight: bold
-        line-height: base
         responsive-font-size: 3
       h6:
-        color: text.primary
         font-family: primary.stack
         font-weight: semibold
         letter-spacing: -0.04em

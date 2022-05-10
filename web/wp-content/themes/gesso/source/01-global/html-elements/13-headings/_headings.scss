@@ -4,9 +4,10 @@
 
 %hN {
 	color: inherit;
-	font-weight: gesso-font-weight(bold);
+	font-family: gesso-font-family(header);
+	font-weight: gesso-font-weight(regular);
 	hyphens: none;
-	line-height: gesso-line-height(base);
+	line-height: gesso-line-height(tight);
 	margin: 0 0 rem(gesso-spacing(2));
 	text-rendering: optimizelegibility;
 
@@ -14,15 +15,6 @@
 		orphans: 3;
 		page-break-after: avoid;
 		widows: 3;
-
-		&::after {
-			display: inline-block;
-		}
-	}
-
-	// Add top margin when headers are preceded by other elements (p, ul, etc.)
-	* + & {
-		margin-top: 1em;
 	}
 }
 
@@ -60,16 +52,4 @@ h6,
 %h6 {
 	@extend %hN;
 	@include display-text-style(h6);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	// Remove top margin for adjacent subheadings.
-	& + & {
-		margin-top: 0;
-	}
 }
