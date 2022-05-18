@@ -4,10 +4,21 @@
     "color": {
       "defaultPalette": false,
       "defaultGradients": false,
-      "custom": false
+      "custom": false,
+      "customGradient": false,
+      "customDuotone": false,
+      "background": false,
+      "gradients": []
     },
     "typography": {
       "customFontSize": false
+    },
+    "blocks": {
+      "core/group": {
+        "color": {
+          "background": true
+        }
+      }
     }
   }
 }
