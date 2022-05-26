@@ -1,0 +1,17 @@
+@use '00-config' as *;
+
+.l-footer {
+	font-family: gesso-font-family(header);
+	padding: gesso-spacing(4) 0;
+
+	h2 {
+		font-size: inherit;
+		text-transform: uppercase;
+	}
+
+	.wp-block-column:last-child {
+		@include break-small() {
+			text-align: right;
+		}
+	}
+}
