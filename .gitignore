@@ -17,6 +17,7 @@ web/wp-content/vendor
 web/wp-content/mu-plugins/*
 !web/wp-content/plugins/
 web/wp-content/plugins/*
+!web/wp-content/plugins/scary-celery-blocks
 !web/wp-content/themes/
 web/wp-content/themes/*
 
