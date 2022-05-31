@@ -87,6 +87,11 @@ function gesso_block_assets() {
     'handle' => 'gesso-slider',
     'src' => get_theme_file_uri('build/css/slider.css'),
   ]);
+	wp_enqueue_block_style('acf/film-info', [
+    'handle' => 'gesso-film-info',
+    'src' => get_theme_file_uri('build/css/film-info.css'),
+    'path' => get_theme_file_path('build/css/film-info.css'),
+  ]);
 }
 add_action( 'after_setup_theme', 'gesso_block_assets' );
 
