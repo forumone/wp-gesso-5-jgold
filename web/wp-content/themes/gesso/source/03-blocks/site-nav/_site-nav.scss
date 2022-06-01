@@ -1,0 +1,16 @@
+@use '00-config' as *;
+
+.site-nav {
+	.wp-block-navigation-item__content {
+		color: gesso-brand(green, base);
+
+		&:hover,
+		&:focus {
+			color: gesso-brand(green, dark);
+		}
+	}
+
+	@include break-large {
+		--navigation-layout-justify: right;
+	}
+}
