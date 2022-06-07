@@ -4,6 +4,7 @@
 	font-family: gesso-font-family(header);
 
 	blockquote {
+		color: gesso-color(text, primary);
 		font-family: inherit;
 		max-width: 60ch;
 		margin: auto;
@@ -11,13 +12,30 @@
 
 	p {
 		@include responsive-font-size(8);
+		position: relative;
+
+		&::after {
+			display: none;
+		}
+
+		&::before {
+			color: gesso-brand(green, light);
+			font-size: 4em;
+			line-height: 0;
+			vertical-align: bottom;
+			display: inline-block;
+			margin-right: 10px;
+		}
 	}
 
-	cite {
+	cite,
+	.wp-block-pullquote__citation {
 		font-family: inherit;
 		font-size: 18px;
 		font-style: italic;
 		font-weight: 400;
+		text-align: right;
+		text-transform: none;
 
 		&::before {
 			content: '—';
