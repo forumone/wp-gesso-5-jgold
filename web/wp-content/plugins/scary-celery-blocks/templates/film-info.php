@@ -3,7 +3,7 @@ $director = get_field( 'director', $post_id );
 $release_year = get_field( 'release_year', $post_id );
 
 if ( $director || $release_year ) {
-	echo '<dl class="l-constrain l-constrain--small film-info">';
+	echo '<dl class="film-info">';
 
 	if ( $director ) {
 		echo '<dt>' . __('Director') . '</dt>';
