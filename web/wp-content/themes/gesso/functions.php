@@ -187,3 +187,63 @@ function gesso_collapsed_search( $block_content, $block ) {
   return $block_content;
 }
 add_filter('render_block_core/search', 'gesso_collapsed_search', 10, 2);
+
+function gesso_register_templates() {
+	$post_type_object = get_post_type_object( 'film' );
+	$post_type_object->template = array(
+		array(
+			'core/cover',
+			array(
+				'allowedBlocks' => array('core/heading'),
+				'dimRatio' => 50,
+				'textAlign' => 'center',
+			),
+			array(
+				array(
+					'core/heading',
+					array(
+						'level' => '1',
+						'align' => 'center',
+						'textAlign' => 'center',
+						'className' => 'is-style-no-max-width',
+						'textColor' => 'grayscale-white',
+						'content' => 'Film Title',
+					)
+				)
+			)
+		),
+		array(
+			'core/group',
+			array(
+				'layout' => 'inherit',
+				'templateLock' => 'all',
+			),
+			array(
+				array( 'core/pullquote', ),
+				array(
+					'core/columns',
+					array( 'templateLock' => 'all' ),
+					array(
+						array(
+							'core/column',
+							array( 'width' => '33.3%', 'templateLock' => 'all' ),
+							array( array('core/post-featured-image' ) )
+						),
+						array(
+							'core/column',
+							array( 'width' => '66.6%', 'templateLock' => 'all' ),
+							array(
+								array('core/post-title'),
+								array('acf/film-info'),
+								array('core/paragraph',
+									array( 'className' => 'is-style-no-max-width' )
+								),
+							)
+						)
+					)
+				)
+			)
+		)
+	);
+}
+add_action( 'init', 'gesso_register_templates' );
