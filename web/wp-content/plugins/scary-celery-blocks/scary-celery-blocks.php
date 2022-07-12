@@ -35,3 +35,7 @@ if ( function_exists( 'acf_register_block_type' ) ) {
 	add_action( 'acf/init', 'scary_celery_blocks_register_acf_blocks' );
 }
 
+function gutenberg_examples_01_register_block() {
+    register_block_type( __DIR__ . '/tutorial-block');
+}
+add_action( 'init', 'gutenberg_examples_01_register_block' );
