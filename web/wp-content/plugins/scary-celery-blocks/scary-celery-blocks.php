@@ -10,6 +10,7 @@
  */
 
 function scary_celery_blocks_register_blocks() {
+	register_block_type_from_metadata(__DIR__ . '/trivia');
 	// Add blocks to register here
 }
 add_action( 'init', 'scary_celery_blocks_register_blocks' );
@@ -39,3 +40,5 @@ function gutenberg_examples_01_register_block() {
     register_block_type( __DIR__ . '/tutorial-block');
 }
 add_action( 'init', 'gutenberg_examples_01_register_block' );
+
+
