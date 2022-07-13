@@ -1,0 +1,9 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "scary-celery-blocks/trivia",
+  "title": "Trivia",
+  "category": "widgets",
+  "editorScript": "file:../build/trivia.js",
+  "style": "file:../build/trivia.css"
+}
